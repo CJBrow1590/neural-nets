@@ -14,5 +14,7 @@ before_install:
   - "pip install --upgrade pip"
 install:
   - "pip install -e ."
+script:
+  - ls -lthra
 notifications:
   emails: false

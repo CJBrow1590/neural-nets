@@ -1,0 +1,18 @@
+sudo: false
+language: python
+cache: pip
+python:
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+before_install:
+  - python --version
+  - uname -a
+  - ls -a
+  - which pip
+  - "pip install --upgrade pip"
+install:
+  - "pip install -e ."
+notifications:
+  emails: false

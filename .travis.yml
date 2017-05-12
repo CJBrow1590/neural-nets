@@ -11,7 +11,8 @@ before_install:
   - "pip install --upgrade pip"
 install:
   - "echo time to install stuff"
-  - "pip install scipy"
+  - "pip install scipy" # includes numpy
+  - "pip install matplotlib"
 script:
   - "cd handwriting-recognition"
   - "python run.py"

@@ -18,7 +18,7 @@ class neuralNetwork:
 	
 	def train(self, inputs_list, targets_list):
 		# convert inputs list to 2d array
-		inputs = numpy.array(inputs_list, ndim=2).T
+		inputs = numpy.array(inputs_list, ndmin=2).T
 		targets = numpy.array(targets_list, ndmin=2).T
 
 		hidden_inputs = numpy.dot(self.wih, inputs)

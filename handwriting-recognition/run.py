@@ -18,4 +18,7 @@ image_array = numpy.asfarray(all_values[1:]).reshape((28,28))
 #matplotlib.pyplot.imshow(image_array, cmap='Greys', interpolation='nearest')
 #matplotlib.pyplot.show() # uncomment these 2 lines to open graphic in pop out window
 
+# rescale from 0-255 to 0.01-1.0 (zeros are bad for neural nets)
+scaled_input = (numpy.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.01
+
 print "done"

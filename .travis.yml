@@ -11,7 +11,7 @@ before_install:
   - "pip install --upgrade pip"
 install:
   - "echo time to install stuff"
-  - "pip install git+https://github.com/scipy/scipy.git"
+  - "pip install scipy"
 script:
   - "cd handwriting-recognition"
   - "python run.py"

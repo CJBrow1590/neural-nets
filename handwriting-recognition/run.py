@@ -15,7 +15,7 @@ print data_list[1]
 
 all_values = data_list[0].split(',')
 image_array = numpy.asfarray(all_values[1:]).reshape((28,28))
-matplotlib.pyplot.imshow(image_array, cmap='Greys', interpolation='nearest')
-#matplotlib.pyplot.show() # uncomment to open graphic in pop out window
+#matplotlib.pyplot.imshow(image_array, cmap='Greys', interpolation='nearest')
+#matplotlib.pyplot.show() # uncomment these 2 lines to open graphic in pop out window
 
 print "done"

@@ -54,7 +54,12 @@ test_data_file.close()
 
 for record in test_data_list:
 	all_values = record.split(',')
-	print(all_values[0])
-	print(n.query((numpy.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.01))
+	print("true value = " + all_values[0])
+	queryVal = n.query((numpy.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.01)
+	iCount = 0
+	for iOut in queryVal:
+		print(str(iCount) + " " + str(iOut))
+		iCount += 1
+		pass
 	print("")
 	pass

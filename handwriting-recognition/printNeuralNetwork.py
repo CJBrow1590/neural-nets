@@ -48,6 +48,34 @@ class printNeuralNetwork:
 
 		# update the weights for the links between the input and hidden layers
 		self.wih += self.lr * numpy.dot((hidden_errors * hidden_outputs * (1.0 - hidden_outputs)), numpy.transpose(inputs))
+
+		print "finished single training instance"
+		print "first argument (inputs_list):"
+		print inputs_list
+		print "second argument (targets_list):"
+		print inputs_list
+		print "inputs:"
+		print inputs
+		print "targets:"
+		print targets
+		print "hidden_inputs:"
+		print hidden_inputs
+		print "hidden_outputs:"
+		print hidden_outputs
+		print "final_inputs:"
+		print final_inputs
+		print "final_outputs:"
+		print final_outputs
+		print "output_errors:"
+		print output_errors
+		print "hidden_errors:"
+		print hidden_errors
+		print "who has shape", self.who.shape
+		print "who="
+		print self.who
+		print "wih has shape", self.wih.shape
+		print "wih="
+		print self.wih
 		pass
 	
 	def query(self, inputs_list):
@@ -58,5 +86,19 @@ class printNeuralNetwork:
 		hidden_outputs = self.activation_function(hidden_inputs)
 		final_inputs = numpy.dot(self.who, hidden_outputs)
 		final_outputs = self.activation_function(final_inputs)
+
+		print "Network has been queried"
+		print "first argument (inputs_list):"
+		print inputs_list
+		print "inputs:"
+		print inputs
+		print "hidden_inputs:"
+		print hidden_inputs
+		print "hidden_outputs:"
+		print hidden_outputs
+		print "final_inputs:"
+		print final_inputs
+		print "final_outputs:"
+		print final_outputs
 	
 		return final_outputs

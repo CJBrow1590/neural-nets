@@ -9,7 +9,7 @@ learning_rate = 0.3
 
 n = printNeuralNetwork(input_nodes, hidden_nodes, output_nodes, learning_rate)
 
-training_data_file = open("mnist_datasets/mnist_train_2.csv", 'r')
+training_data_file = open("mnist_datasets/mnist_train_1.csv", 'r')
 training_data_list = training_data_file.readlines()
 training_data_file.close()
 
@@ -31,7 +31,7 @@ for record in training_data_list:
 	n.train(inputs, targets)
 	pass
 
-test_data_file = open("mnist_datasets/mnist_test_2.csv", 'r')
+test_data_file = open("mnist_datasets/mnist_test_1.csv", 'r')
 test_data_list = test_data_file.readlines()
 test_data_file.close()
 

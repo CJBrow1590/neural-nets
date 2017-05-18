@@ -16,9 +16,13 @@ class printNeuralNetwork:
 		self.activation_function = lambda x: scipy.special.expit(x)
 
 		print "network has been initialized"
+		print "wih has type", type(self.wih)
+		print "and shape", self.wih.shape
 		print "wih = "
 		print self.wih
 		print ""
+		print "who has type", type(self.who)
+		print "and shape", self.who.shape
 		print "who = "
 		print self.who
 		print ""

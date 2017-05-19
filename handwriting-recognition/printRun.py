@@ -3,7 +3,7 @@ import scipy.special
 from printNeuralNetwork import printNeuralNetwork
 
 input_nodes = 784 # 28x28=784 pixels
-hidden_nodes = 100 # somewhat arbitrary, but reasonable value
+hidden_nodes = 15 # somewhat arbitrary, was 100 but changed to 15 for debugging
 output_nodes = 10 # 0-9
 learning_rate = 0.3
 

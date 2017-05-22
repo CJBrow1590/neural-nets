@@ -6,7 +6,7 @@ data_file = open("mnist_datasets/mnist_train_100.csv", 'r') # r = read only
 data_list = data_file.readlines() # only good for small files (hogs memory)
 data_file.close()
 
-rowNumber = 2
+rowNumber = 1
 
 print ""
 print data_list[rowNumber]

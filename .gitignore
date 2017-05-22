@@ -1,1 +1,10 @@
 handwriting-recognition/printNeuralNetwork.pyc
+handwriting-recognition/neuralNetwork.pyc
+particle-id/data/data_test_100k.txt
+particle-id/data/data_train_100k.txt
+particle-id/data/src/analysis/Generator.class
+particle-id/data/src/physics/Narticle.class
+particle-id/data/src/physics/Nid.class
+particle-id/neuralNetwork.pyc
+particle-id/out.txt
+particle-id/printNeuralNetwork.pyc
